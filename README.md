@@ -19,13 +19,9 @@ The Bone and Air values are extracted spatial descriptors rather than raw CT ima
 **Analysis**
 EDA showed that Bone and Air feature patterns change across axial positions. Correlation analysis found that predictive information is distributed across many features rather than one dominant feature.
 PCA reduced the 384 features to two dimensions for visualization. PC1 and PC2 explained about 27% of total feature variance and showed visible structure related to axial location.
-Machine Learning
+
+**Machine Learning**
 The following regression models were compared using patient-based train/test splitting to avoid data leakage:
-Model	MAE	RMSE	R²
-Linear Regression	6.500	9.029	0.824
-Ridge Regression	6.436	8.929	0.828
-Elastic Net	6.638	9.280	0.814
-Random Forest	2.696	6.216	0.916
 
 <img width="360" height="157" alt="image" src="https://github.com/user-attachments/assets/a37c2be2-9b77-4db2-b78b-ebe47428818c" />
 
