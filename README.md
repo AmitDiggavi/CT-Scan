@@ -1,13 +1,14 @@
 **CT Slice Localization Using Machine Learning**
 
-**Overview**
+**Overview:**
+
 This project predicts the relative axial location of CT slices using 384 Bone and Air spatial features across more than 53,000 CT slices.
 The analysis included exploratory data analysis, feature correlation, PCA, and comparison of multiple regression models.
 
 **Tools used:**
 Python, Pandas, NumPy, Matplotlib, scikit-learn, PCA, Modeling
 
-**Dataset**
+**Dataset:**
 
 Each CT slice contains:
 - 240 Bone features
@@ -18,6 +19,7 @@ Each CT slice contains:
 The Bone and Air values are extracted spatial descriptors rather than raw CT image pixels.
 
 **Analysis:**
+
 EDA showed that Bone and Air feature patterns change across axial positions. Correlation analysis found that predictive information is distributed across many features rather than one dominant feature.
 PCA reduced the 384 features to two dimensions for visualization. PC1 and PC2 explained about 27% of total feature variance and showed visible structure related to axial location.
 
@@ -25,8 +27,6 @@ PCA reduced the 384 features to two dimensions for visualization. PC1 and PC2 ex
 The following regression models were compared using patient-based train/test splitting to avoid data leakage:
 
 <img width="360" height="157" alt="image" src="https://github.com/user-attachments/assets/a37c2be2-9b77-4db2-b78b-ebe47428818c" />
-
-
 
 **Conclusion:**
 
